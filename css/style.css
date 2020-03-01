@@ -2,6 +2,13 @@ body
 {
     font-family: 'Courier New', Courier, monospace;
 }
+html {
+    overflow:   scroll;
+  }
+  ::-webkit-scrollbar {
+      width: 0px;
+      background: transparent; /* make scrollbar transparent */
+  }
 header
 {
     z-index: 1;
@@ -67,8 +74,8 @@ main div p {
 main div img {
     width: 300px;
     height: 357px;
-    padding-right: 5%;
-    padding-left: 75px;
+    padding-right: 4.8%;
+    padding-left: 80px;
     margin-top: 2%;
 }
 article
@@ -80,7 +87,6 @@ article
 article img {
     float: left;
     width: 480px !important;
-    margin-top: 5% !important;
     height: 400px !important;
     margin-left: 7%;
     margin-right: 14px;
@@ -88,6 +94,10 @@ article img {
 article p
 {
     padding-top: 1%;
+    height: 219px;
+    overflow: auto;
+    margin-bottom: 20px;
+    overflow-y: hidden;
 }
 article b
 {
